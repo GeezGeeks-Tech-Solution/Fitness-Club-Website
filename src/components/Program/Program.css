@@ -1,0 +1,80 @@
+.program-header {
+  display: flex;
+  padding: 5.4rem 2rem;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  gap: 5rem;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+.program-categories {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: gray;
+  color: white;
+  justify-content: space-between;
+}
+.category:hover {
+  background: var(--planCard);
+  transform: scale(1.1);
+}
+.category > :nth-child(1) {
+  fill: white;
+  width: 2rem;
+  height: 2rem;
+}
+.category > :nth-child(2) {
+  font-weight: bold;
+}
+.category > :nth-child(3) {
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+.category > div {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+.category > div > :nth-child(2) {
+  width: 1rem;
+}
+.category > div > :nth-child(2) {
+  width: 1rem;
+  height: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .program-header {
+    flex-direction: column;
+    padding-top: 8rem;
+    font-size: x-large;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    margin-top: 10rem;
+  }
+  .program-categories {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .category:hover {
+    transform: none;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px ){
+  .program-header{
+    font-size: 2.5rem;
+  }
+}

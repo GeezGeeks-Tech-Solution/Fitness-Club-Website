@@ -1,0 +1,44 @@
+.footer {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.footer-container {
+  position: relative;
+}
+.footer-container > hr {
+  border: 1px solid var(--lightgray);
+}
+.footer > div {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer > div > img {
+  width: 2rem;
+  cursor: pointer;
+}
+.footer > img {
+  width: 7rem;
+}
+.blur-footer-1,
+.blur-footer-2 {
+  position: absolute;
+  width: 26rem;
+  height: 12rem;
+  filter: blur(200px);
+  background: rgb(251, 76, 76);
+  z-index: -1; /* Make sure they stay behind */
+}
+.blur-footer-1 {
+  left: 15%;
+}
+
+.blur-footer-2 {
+  right: 15%;
+}

@@ -1,0 +1,47 @@
+.header {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-img {
+  width: 10rem;
+  height: 3rem;
+}
+.menu {
+  display: none;
+}
+
+.header-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  color: white;
+}
+
+.header-menu > li:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 2rem;
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--appColor);
+}
+@media screen and (max-width: 768px) {
+  .header > :nth-child(2) {
+    position: fixed;
+    right: 2rem;
+    z-index: 100;
+  }
+  .desktop-screen {
+    display: none;
+  }
+}
