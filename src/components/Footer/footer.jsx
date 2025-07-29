@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.css";
 import github from "../../assets/github.png";
 import instagram from "../../assets/instagram.png";
-import linkedIn from "../../assets/linkedIn.png";
+import linkedIn from "../../assets/linkedin.png";
 import logo from "../../assets/logo.png";
 
 const Footer = () => {
